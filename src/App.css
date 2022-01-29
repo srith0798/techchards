@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Write CSS code here */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heading {
+  color: #171f46;
+  font-size: 50px;
+}
+.information {
+  color: #64748b;
+  font-size: 24px;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .information {
+    font-size: 18px;
+  }
+}
